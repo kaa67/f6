@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "The current directory is: "
+pwd
+
+echo "#############################"
+echo "### Building container f6 ###"
+echo "#############################"
+
+docker build -t f6 .

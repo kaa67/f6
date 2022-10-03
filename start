@@ -1,0 +1,21 @@
+#!/bin/bash
+
+echo "The current directory is: "
+pwd
+
+echo "#############################"
+echo "### Started container f6  ###"
+echo "### (Before use build f6) ###"
+echo "### docker build -t f6 .  ###"
+echo "#############################"
+echo "### Inside First step: ###"
+echo "### npm install        ###"
+echo "##########################"
+echo "### Start server: ###"
+echo "### npm run start ###"
+echo "#####################"
+echo "### See more in   ###"
+echo "### package.json  ###"
+echo "#####################"
+
+docker run -itv $(pwd):/home -w /home f6
